@@ -6,7 +6,10 @@ import com.example.movieservice.movieservice.model.movie.MovieDTO;
 import com.example.movieservice.movieservice.repository.mongo.MovieRepository;
 import com.example.movieservice.movieservice.repository.mongo.RatingRepository;
 import com.jasongoodwin.monads.Try;
+import org.apache.spark.SparkConf;
+import org.apache.spark.SparkContext;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.sql.SQLContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.http.*;
@@ -18,6 +21,7 @@ import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -33,47 +37,52 @@ public class DatabaseLoader implements CommandLineRunner {
         this.movieRepository = movieRepository;
         this.ratingRepository = ratingRepository;
     }
+    @Override
+    public void run(String... strings) throws Exception {
 
+    }
+
+/*
     @Override
     public void run(String... strings) throws Exception {
 
 
 
-//        SparkConf conf = new SparkConf();
-//        conf.setAppName("Spark MultipleContest Test");
-//        conf.set("spark.driver.allowMultipleContexts", "true");
-//        conf.setMaster("local");
-//        conf.getAll();
-//
-//        SparkContext sc = new SparkContext(conf);
-//        SQLContext sqlContext = new org.apache.spark.sql.SQLContext(sc);
-//        JavaSparkContext jsc =JavaSparkContext.fromSparkContext(sc);
+        SparkConf conf = new SparkConf();
+        conf.setAppName("Spark MultipleContest Test");
+        conf.set("spark.driver.allowMultipleContexts", "true");
+        conf.setMaster("local");
+        conf.getAll();
 
-//
+        SparkContext sc = new SparkContext(conf);
+        SQLContext sqlContext = new org.apache.spark.sql.SQLContext(sc);
+        JavaSparkContext jsc =JavaSparkContext.fromSparkContext(sc);
 
-/*
+
+
+
         List<Movie> movieRDD = getMovieRDD(jsc);
         List<Movie> lastMovieList = getLinksRDD(jsc);
-        mergeLinkRDDAndMovieRDD(movieRDD, lastMovieList);
+        //imdb and tmdb id
+//        mergeLinkRDDAndMovieRDD(movieRDD, lastMovieList);
 
         RestTemplate restTemplate = new RestTemplate();
         List<Movie> movies = movieRepository.findAll();
         List<MovieDTO> movieDTOS  = new ArrayList<>();
-//7808 kaldi
-        for (int i = 7808; i < movies.size(); i++) {
+
+        for (int i = 0; i < movies.size(); i++) {
             if((!movies.get(i).getTmdbId().equals("********")) && !movies.get(i).getTmdbId().equals("999999999") ) {
                 ResponseEntity<MovieDTO> resultGoMonth = updateMovieRepositoryFromImdbApiForMovieImageUrl(movieRDD, restTemplate, movies, movieDTOS, i);
-//                downloadMovieImage(movies, i, resultGoMonth);
+                downloadMovieImage(movies, i, resultGoMonth);
             }
         }
-*/
+
 //        List<Rating> ratingRdd = getRatingRDD(jsc);
 //        saveRating(ratingRdd);
-//
-//        getUgurMovie();
+
 
     }
-
+*/
     private void getUgurMovie() {
         Rating rating = new Rating();
         rating.setId("1000230");
@@ -261,5 +270,6 @@ public class DatabaseLoader implements CommandLineRunner {
                     return movie;
                 }).collect();
     }
+
 
 }

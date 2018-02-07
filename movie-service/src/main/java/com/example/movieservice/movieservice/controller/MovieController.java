@@ -2,6 +2,7 @@ package com.example.movieservice.movieservice.controller;
 
 import com.example.movieservice.movieservice.model.Movie;
 import com.example.movieservice.movieservice.repository.mongo.MovieRepository;
+import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,7 +19,8 @@ import java.util.List;
 @CrossOrigin("*")
 @RestController
 @RequestMapping(value = "/movies")
-public class MovieController implements Serializable {
+@Log4j
+public class MovieController {
 
     private final MovieRepository movieRepository;
 
@@ -30,25 +32,29 @@ public class MovieController implements Serializable {
     @GetMapping
     @Produces(MediaType.APPLICATION_JSON_VALUE)
     public List<Movie> getAllMovies(){
+        log.info("MovieController - getAllMovies() is called");
         return movieRepository.findAll();
     }
 
     @GetMapping("/paging")
     @Produces(MediaType.APPLICATION_JSON_VALUE)
-    public Page<Movie> getAllMoviesPageable(Pageable pageable){
-//        http://localhost:8081/movies/paging?page=0&size=5
+    public Page<Movie> getAllMoviesWithPageable(Pageable pageable){
+        log.info("MovieController - getAllMoviesWithPageable() is called");
         return movieRepository.findAll(pageable);
     }
 
 
     @GetMapping("/{id}")
     public Movie getMovieById(@PathVariable("id")String id){
+        log.info("MovieController - getMovieById() is called");
         return movieRepository.findOne(id);
     }
 
     @GetMapping(value = "/{id}/image",produces = MediaType.IMAGE_JPEG_VALUE )
     @ResponseBody
     public ResponseEntity<byte[]> getMovieImageById(@PathVariable("id")String id) throws IOException {
+        log.info("MovieController - getMovieImageById() is called");
+
         String filename="images"+movieRepository.findOne(id).getUrl();
         InputStream inputImage = new FileInputStream(filename);
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
