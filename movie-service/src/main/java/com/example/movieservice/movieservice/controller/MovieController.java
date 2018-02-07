@@ -2,6 +2,10 @@ package com.example.movieservice.movieservice.controller;
 
 import com.example.movieservice.movieservice.model.Movie;
 import com.example.movieservice.movieservice.repository.mongo.MovieRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -20,6 +24,11 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/movies")
 @Log4j
+@Api(
+        basePath = "/movies",
+        produces = "application/json",
+        value = "Ticket",
+        description = "Operations with movies and ratings")
 public class MovieController {
 
     private final MovieRepository movieRepository;
@@ -29,6 +38,12 @@ public class MovieController {
         this.movieRepository = movieRepository;
     }
 
+    @ApiOperation(value = "Get Movies", notes = "Fetch List of Movies")
+    @ApiResponses(value = {
+            @ApiResponse(code = 404, message = "Please check url"),
+            @ApiResponse(code = 200, message = "List<Movie>"),
+            @ApiResponse(code = 500, message = "Error occurred while fetching Movies")
+    })
     @GetMapping
     @Produces(MediaType.APPLICATION_JSON_VALUE)
     public List<Movie> getAllMovies(){
@@ -36,6 +51,12 @@ public class MovieController {
         return movieRepository.findAll();
     }
 
+    @ApiOperation(value = "Get Movies", notes = "Fetch List of Movies with pageable")
+    @ApiResponses(value = {
+            @ApiResponse(code = 404, message = "Please check url"),
+            @ApiResponse(code = 200, message = "List<Movie>"),
+            @ApiResponse(code = 500, message = "Error occurred while fetching Movies")
+    })
     @GetMapping("/paging")
     @Produces(MediaType.APPLICATION_JSON_VALUE)
     public Page<Movie> getAllMoviesWithPageable(Pageable pageable){
@@ -43,13 +64,24 @@ public class MovieController {
         return movieRepository.findAll(pageable);
     }
 
-
+    @ApiOperation(value = "Get Movie", notes = "Fetch Movie")
+    @ApiResponses(value = {
+            @ApiResponse(code = 404, message = "Please check url"),
+            @ApiResponse(code = 200, message = "Movie"),
+            @ApiResponse(code = 500, message = "Error occurred while fetching Movie")
+    })
     @GetMapping("/{id}")
     public Movie getMovieById(@PathVariable("id")String id){
         log.info("MovieController - getMovieById() is called");
         return movieRepository.findOne(id);
     }
 
+    @ApiOperation(value = "Get Movie's image", notes = "Fetch Movie's image")
+    @ApiResponses(value = {
+            @ApiResponse(code = 404, message = "Please check url"),
+            @ApiResponse(code = 200, message = "Movie's image"),
+            @ApiResponse(code = 500, message = "Error occurred while fetching Movie")
+    })
     @GetMapping(value = "/{id}/image",produces = MediaType.IMAGE_JPEG_VALUE )
     @ResponseBody
     public ResponseEntity<byte[]> getMovieImageById(@PathVariable("id")String id) throws IOException {
