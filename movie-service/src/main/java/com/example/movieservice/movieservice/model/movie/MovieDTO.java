@@ -5,7 +5,7 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class MovieDTO {
+public class MovieDTO  {
 
     private String budget;
     private String vote_average;

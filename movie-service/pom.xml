@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example.movie-service</groupId>
@@ -25,10 +25,7 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,11 +36,16 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+		<!--<dependency>-->
+		<!--<groupId>mysql</groupId>-->
+		<!--<artifactId>mysql-connector-java</artifactId>-->
+		<!--<scope>runtime</scope>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+		<!--<groupId>org.springframework.boot</groupId>-->
+		<!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -57,23 +59,18 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>info.movito</groupId>
-			<artifactId>themoviedbapi</artifactId>
-			<version>1.6</version>
-		</dependency>
+		<!--<dependency>-->
+		<!--<groupId>info.movito</groupId>-->
+		<!--<artifactId>themoviedbapi</artifactId>-->
+		<!--<version>1.6</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.16.18</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
-		<dependency>
-			<groupId>net.sourceforge.htmlunit</groupId>
-			<artifactId>htmlunit</artifactId>
-			<version>2.13</version>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -83,33 +80,109 @@
 
 
 
-		<dependency>
-			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-core_2.10</artifactId>
-			<version>1.6.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-sql_2.10</artifactId>
-			<version>1.6.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-mllib_2.10</artifactId>
-			<version>1.6.1</version>
-		</dependency>
+		<!--<dependency>-->
+		<!--<groupId>org.apache.spark</groupId>-->
+		<!--<artifactId>spark-core_2.10</artifactId>-->
+		<!--<version>1.6.1</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+		<!--<groupId>org.apache.spark</groupId>-->
+		<!--<artifactId>spark-sql_2.10</artifactId>-->
+		<!--<version>1.6.1</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+		<!--<groupId>org.apache.spark</groupId>-->
+		<!--<artifactId>spark-mllib_2.10</artifactId>-->
+		<!--<version>1.6.1</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+		<!--<groupId>com.jason-goodwin</groupId>-->
+		<!--<artifactId>better-monads</artifactId>-->
+		<!--<version>0.4.0</version>-->
+		<!--</dependency>-->
+
+
+		<!--<dependency>-->
+		<!--<groupId>org.apache.spark</groupId>-->
+		<!--<artifactId>spark-mllib_2.10</artifactId>-->
+		<!--<version>1.6.1</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>com.jason-goodwin</groupId>
 			<artifactId>better-monads</artifactId>
 			<version>0.4.0</version>
 		</dependency>
 
+		<!--<dependency>-->
+		<!--<groupId>xyz.nickr</groupId>-->
+		<!--<artifactId>jomdb</artifactId>-->
+		<!--<version>2.0.0</version>-->
+		<!--</dependency>-->
 
 		<dependency>
-			<groupId>xyz.nickr</groupId>
-			<artifactId>jomdb</artifactId>
-			<version>2.0.0</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
+
+
+		<!--<dependency>-->
+		<!--<groupId>org.apache.spark</groupId>-->
+		<!--<artifactId>spark-sql_2.10</artifactId>-->
+		<!--<version>1.6.1</version>-->
+		<!--</dependency>-->
+
+
+
+		<!--<dependency>-->
+		<!--<groupId>org.mongodb.spark</groupId>-->
+		<!--<artifactId>mongo-spark-connector_2.10</artifactId>-->
+		<!--<version>0.1</version>-->
+		<!--</dependency>-->
+
+
+		<!--<dependency>-->
+		<!--<groupId>org.apache.spark</groupId>-->
+		<!--<artifactId>spark-core_2.10</artifactId>-->
+		<!--<version>1.6.1</version>-->
+		<!--</dependency>-->
+
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.11</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb.spark</groupId>
+			<artifactId>mongo-spark-connector_2.11</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-sql_2.11</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+		<dependency>
+			<groupId>org.scala-lang</groupId>
+			<artifactId>scala-library</artifactId>
+			<version>2.11.12</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-mllib_2.11</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
