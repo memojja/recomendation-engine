@@ -1,0 +1,10 @@
+<p>
+  movie-list works!
+</p>
+
+
+<div *ngFor="let movie of movieList" (click)="getMovieById(movie.movieId)">
+{{selectedMovie?.movieId}}
+
+  {{movie.name}}
+</div>
