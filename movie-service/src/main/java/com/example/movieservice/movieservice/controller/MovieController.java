@@ -27,8 +27,8 @@ import java.util.List;
 @Api(
         basePath = "/movies",
         produces = "application/json",
-        value = "Ticket",
-        description = "Operations with movies and ratings")
+        value = "Movie",
+        description = "Operations with movies")
 public class MovieController {
 
     private final MovieRepository movieRepository;

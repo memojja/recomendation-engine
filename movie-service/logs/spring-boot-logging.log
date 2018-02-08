@@ -286,3 +286,78 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2018-02-08 17:24:21.617  INFO 14528 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
 2018-02-08 17:24:22.061  INFO 14528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
 2018-02-08 17:24:22.066  INFO 14528 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Started MovieServiceApplication in 7.628 seconds (JVM running for 10.119)
+2018-02-08 21:19:06.176  INFO 14528 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-08 21:19:06.179  INFO 14528 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-08 21:19:06.233  INFO 14528 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+2018-02-08 21:19:06.276  INFO 14528 --- [http-nio-8081-exec-1] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:19:06.321  INFO 14528 --- [http-nio-8081-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+2018-02-08 21:19:41.973  INFO 14528 --- [http-nio-8081-exec-6] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:42.440  INFO 14528 --- [http-nio-8081-exec-2] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:42.812  INFO 14528 --- [http-nio-8081-exec-7] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:42.953  INFO 14528 --- [http-nio-8081-exec-4] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:43.072  INFO 14528 --- [http-nio-8081-exec-5] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:43.201  INFO 14528 --- [http-nio-8081-exec-3] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:43.331  INFO 14528 --- [http-nio-8081-exec-8] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:43.737  INFO 14528 --- [http-nio-8081-exec-9] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:43.875  INFO 14528 --- [http-nio-8081-exec-10] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:44.490  INFO 14528 --- [http-nio-8081-exec-1] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:19:44.885  INFO 14528 --- [http-nio-8081-exec-6] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:20:26.077  INFO 14528 --- [http-nio-8081-exec-2] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:20:50.698  INFO 14528 --- [http-nio-8081-exec-7] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:20:57.807  INFO 14528 --- [http-nio-8081-exec-4] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:21:02.123  INFO 14528 --- [http-nio-8081-exec-5] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:21:27.090  INFO 14528 --- [http-nio-8081-exec-1] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:21:32.027  INFO 14528 --- [http-nio-8081-exec-6] c.e.m.m.controller.MovieController       : MovieController - getMovieById() is called
+2018-02-08 21:21:49.254  INFO 14528 --- [http-nio-8081-exec-2] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:21:52.720  INFO 14528 --- [http-nio-8081-exec-7] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:25:51.024  INFO 14528 --- [http-nio-8081-exec-5] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:28:39.450  INFO 14528 --- [http-nio-8081-exec-1] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 21:43:16.135  INFO 15604 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Starting MovieServiceApplication on ari with PID 15604 (C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service\target\classes started by memojja in C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service)
+2018-02-08 21:43:16.136  INFO 15604 --- [restartedMain] c.e.m.m.MovieServiceApplication          : The following profiles are active: mongo
+2018-02-08 21:43:16.211  INFO 15604 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15835bf8: startup date [Thu Feb 08 21:43:16 EET 2018]; root of context hierarchy
+2018-02-08 21:43:19.129  INFO 15604 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-02-08 21:43:19.977  INFO 15604 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-02-08 21:43:19.990  INFO 15604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-08 21:43:19.992  INFO 15604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-08 21:43:20.162  INFO 15604 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-08 21:43:20.163  INFO 15604 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3957 ms
+2018-02-08 21:43:20.410  INFO 15604 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-08 21:43:20.418  INFO 15604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-08 21:43:20.418  INFO 15604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-08 21:43:20.420  INFO 15604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-08 21:43:20.420  INFO 15604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-08 21:43:21.205  INFO 15604 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-02-08 21:43:21.206  INFO 15604 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2018-02-08 21:43:21.275  INFO 15604 --- [cluster-ClusterId{value='5a7c9a49adb50f3cf4523d12', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+2018-02-08 21:43:21.278  INFO 15604 --- [cluster-ClusterId{value='5a7c9a49adb50f3cf4523d12', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 0]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, roundTripTimeNanos=742321}
+2018-02-08 21:43:21.280  INFO 15604 --- [cluster-ClusterId{value='5a7c9a49adb50f3cf4523d12', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2018-02-08 21:43:22.441  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}/image],methods=[GET],produces=[image/jpeg]}" onto public org.springframework.http.ResponseEntity<byte[]> com.example.movieservice.movieservice.controller.MovieController.getMovieImageById(java.lang.String) throws java.io.IOException
+2018-02-08 21:43:22.444  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/paging],methods=[GET]}" onto public org.springframework.data.domain.Page<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMoviesWithPageable(org.springframework.data.domain.Pageable)
+2018-02-08 21:43:22.445  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}],methods=[GET]}" onto public com.example.movieservice.movieservice.model.Movie com.example.movieservice.movieservice.controller.MovieController.getMovieById(java.lang.String)
+2018-02-08 21:43:22.445  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMovies()
+2018-02-08 21:43:22.448  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/recomendations/user/{id}],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.RecomendationController.getRecomendationByUserId(java.lang.Integer)
+2018-02-08 21:43:22.450  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/recomendations],methods=[POST]}" onto public void com.example.movieservice.movieservice.controller.RecomendationController.handleRatings(java.util.List<com.example.movieservice.movieservice.model.Rating>)
+2018-02-08 21:43:22.451  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-08 21:43:22.456  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-08 21:43:22.458  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-08 21:43:22.459  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-08 21:43:22.463  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-08 21:43:22.463  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-08 21:43:23.126  INFO 15604 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15835bf8: startup date [Thu Feb 08 21:43:16 EET 2018]; root of context hierarchy
+2018-02-08 21:43:23.205  INFO 15604 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 21:43:23.205  INFO 15604 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 21:43:23.277  INFO 15604 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 21:43:23.672  INFO 15604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-02-08 21:43:23.725  INFO 15604 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-08 21:43:23.734  INFO 15604 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-08 21:43:23.734  INFO 15604 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-08 21:43:23.765  INFO 15604 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-08 21:43:23.799  INFO 15604 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-08 21:43:24.344  INFO 15604 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-02-08 21:43:24.350  INFO 15604 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Started MovieServiceApplication in 8.835 seconds (JVM running for 11.014)
+2018-02-08 21:44:55.113  INFO 15604 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-08 21:44:55.113  INFO 15604 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-08 21:44:55.141  INFO 15604 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-02-08 21:44:55.207  INFO 15604 --- [http-nio-8081-exec-1] c.e.m.m.c.RecomendationController        : RecomendationController - handleRatings() is called. 
+2018-02-08 21:48:37.614  INFO 15604 --- [http-nio-8081-exec-4] c.e.m.m.c.RecomendationController        : RecomendationController - handleRatings() is called. 
+2018-02-08 21:48:38.847  INFO 15604 --- [http-nio-8081-exec-3] c.e.m.m.c.RecomendationController        : RecomendationController - handleRatings() is called. 

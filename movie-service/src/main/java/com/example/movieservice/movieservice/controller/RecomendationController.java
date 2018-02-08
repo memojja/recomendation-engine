@@ -7,6 +7,9 @@ import com.example.movieservice.movieservice.repository.mongo.RatingRepository;
 import com.google.gson.Gson;
 import com.mongodb.spark.MongoSpark;
 import com.mongodb.spark.rdd.api.java.JavaMongoRDD;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import lombok.extern.log4j.Log4j;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -22,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/recomendations")
+@RequestMapping("/")
 @Log4j
 public class RecomendationController {
 
@@ -33,6 +36,16 @@ public class RecomendationController {
     public RecomendationController(RatingRepository ratingRepository, MovieRepository movieRepository) {
         this.ratingRepository = ratingRepository;
         this.movieRepository = movieRepository;
+    }
+
+    @ApiOperation(value = "Post Ratings", notes = "Create ratings for a user to recomentions movies")
+    @ApiResponses(value = {
+            @ApiResponse(code = 404, message = "Please check url")
+    })
+    @PostMapping("")
+    public void handleRatings(@RequestBody List<Rating> ratings){
+        log.info("RecomendationController - handleRatings() is called. ");
+        ratings.forEach(System.out::println);
     }
 
     @GetMapping("/user/{id}")
