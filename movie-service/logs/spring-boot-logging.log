@@ -122,3 +122,167 @@
 2018-02-07 22:56:37.241  INFO 16520 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
 2018-02-07 22:56:37.274  INFO 16520 --- [http-nio-8081-exec-9] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
 2018-02-07 22:56:37.311  INFO 16520 --- [http-nio-8081-exec-9] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:25}] to localhost:27017
+2018-02-07 22:57:33.808  INFO 16520 --- [http-nio-8081-exec-2] c.e.m.m.controller.MovieController       : MovieController - getAllMovies() is called
+2018-02-08 15:38:26.276  INFO 16288 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Starting MovieServiceApplication on ari with PID 16288 (C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service\target\classes started by memojja in C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service)
+2018-02-08 15:38:26.278  INFO 16288 --- [restartedMain] c.e.m.m.MovieServiceApplication          : The following profiles are active: mongo
+2018-02-08 15:38:26.335  INFO 16288 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c5ff200: startup date [Thu Feb 08 15:38:26 EET 2018]; root of context hierarchy
+2018-02-08 15:38:27.836  INFO 16288 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-02-08 15:38:28.515  INFO 16288 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-02-08 15:38:28.525  INFO 16288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-08 15:38:28.527  INFO 16288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-08 15:38:28.661  INFO 16288 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-08 15:38:28.662  INFO 16288 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2330 ms
+2018-02-08 15:38:28.875  INFO 16288 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-08 15:38:28.879  INFO 16288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-08 15:38:28.880  INFO 16288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-08 15:38:28.882  INFO 16288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-08 15:38:28.882  INFO 16288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-08 15:38:29.513  INFO 16288 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-02-08 15:38:29.514  INFO 16288 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2018-02-08 15:38:30.314  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/paging],methods=[GET]}" onto public org.springframework.data.domain.Page<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMoviesWithPageable(org.springframework.data.domain.Pageable)
+2018-02-08 15:38:30.317  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}/image],methods=[GET],produces=[image/jpeg]}" onto public org.springframework.http.ResponseEntity<byte[]> com.example.movieservice.movieservice.controller.MovieController.getMovieImageById(java.lang.String) throws java.io.IOException
+2018-02-08 15:38:30.318  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}],methods=[GET]}" onto public com.example.movieservice.movieservice.model.Movie com.example.movieservice.movieservice.controller.MovieController.getMovieById(java.lang.String)
+2018-02-08 15:38:30.319  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMovies()
+2018-02-08 15:38:30.321  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/recomendations/user/{id}],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.RecomendationController.getRecomendationByUserId(java.lang.Integer)
+2018-02-08 15:38:30.322  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-08 15:38:30.325  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-08 15:38:30.326  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-08 15:38:30.328  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-08 15:38:30.332  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-08 15:38:30.332  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-08 15:38:30.574  INFO 16288 --- [cluster-ClusterId{value='5a7c44c5a4f5373fa076d2a9', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113) ~[mongodb-driver-core-3.4.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58) ~[mongodb-driver-core-3.4.3.jar:na]
+	... 3 common frames omitted
+
+2018-02-08 15:38:30.755  INFO 16288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c5ff200: startup date [Thu Feb 08 15:38:26 EET 2018]; root of context hierarchy
+2018-02-08 15:38:30.836  INFO 16288 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 15:38:30.837  INFO 16288 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 15:38:30.922  INFO 16288 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 15:38:31.215  INFO 16288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-02-08 15:38:31.261  INFO 16288 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-08 15:38:31.269  INFO 16288 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-08 15:38:31.269  INFO 16288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-08 15:38:31.293  INFO 16288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-08 15:38:31.315  INFO 16288 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-08 15:38:31.720  INFO 16288 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-02-08 15:38:31.725  INFO 16288 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Started MovieServiceApplication in 5.743 seconds (JVM running for 7.63)
+2018-02-08 17:23:35.829  INFO 1784 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Starting MovieServiceApplication on ari with PID 1784 (C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service\target\classes started by memojja in C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service)
+2018-02-08 17:23:35.829  INFO 1784 --- [restartedMain] c.e.m.m.MovieServiceApplication          : The following profiles are active: mongo
+2018-02-08 17:23:35.892  INFO 1784 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dc41321: startup date [Thu Feb 08 17:23:35 EET 2018]; root of context hierarchy
+2018-02-08 17:23:37.421  INFO 1784 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-02-08 17:23:38.033  INFO 1784 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-02-08 17:23:38.051  INFO 1784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-08 17:23:38.052  INFO 1784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-08 17:23:38.177  INFO 1784 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-08 17:23:38.177  INFO 1784 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2301 ms
+2018-02-08 17:23:38.358  INFO 1784 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-08 17:23:38.358  INFO 1784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-08 17:23:38.373  INFO 1784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-08 17:23:38.373  INFO 1784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-08 17:23:38.373  INFO 1784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-08 17:23:39.002  INFO 1784 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-02-08 17:23:39.002  INFO 1784 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2018-02-08 17:23:39.729  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/paging],methods=[GET]}" onto public org.springframework.data.domain.Page<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMoviesWithPageable(org.springframework.data.domain.Pageable)
+2018-02-08 17:23:39.729  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}/image],methods=[GET],produces=[image/jpeg]}" onto public org.springframework.http.ResponseEntity<byte[]> com.example.movieservice.movieservice.controller.MovieController.getMovieImageById(java.lang.String) throws java.io.IOException
+2018-02-08 17:23:39.729  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMovies()
+2018-02-08 17:23:39.729  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}],methods=[GET]}" onto public com.example.movieservice.movieservice.model.Movie com.example.movieservice.movieservice.controller.MovieController.getMovieById(java.lang.String)
+2018-02-08 17:23:39.729  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/recomendations/user/{id}],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.RecomendationController.getRecomendationByUserId(java.lang.Integer)
+2018-02-08 17:23:39.729  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-08 17:23:39.745  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-08 17:23:39.745  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-08 17:23:39.745  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-08 17:23:39.745  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-08 17:23:39.745  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-08 17:23:40.078  INFO 1784 --- [cluster-ClusterId{value='5a7c5d6badb50f06f8801079', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113) ~[mongodb-driver-core-3.4.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58) ~[mongodb-driver-core-3.4.3.jar:na]
+	... 3 common frames omitted
+
+2018-02-08 17:23:40.156  INFO 1784 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dc41321: startup date [Thu Feb 08 17:23:35 EET 2018]; root of context hierarchy
+2018-02-08 17:23:40.203  INFO 1784 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 17:23:40.203  INFO 1784 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 17:23:40.262  INFO 1784 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 17:23:40.560  INFO 1784 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-02-08 17:23:40.607  INFO 1784 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-08 17:23:40.607  INFO 1784 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-08 17:23:40.607  INFO 1784 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-08 17:23:40.623  INFO 1784 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-08 17:23:40.638  INFO 1784 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-08 17:23:41.020  INFO 1784 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-02-08 17:23:41.020  INFO 1784 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Started MovieServiceApplication in 5.488 seconds (JVM running for 7.618)
+2018-02-08 17:24:01.137  INFO 1784 --- [cluster-ClusterId{value='5a7c5d6badb50f06f8801079', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:1}] to localhost:27017
+2018-02-08 17:24:01.139  INFO 1784 --- [cluster-ClusterId{value='5a7c5d6badb50f06f8801079', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 0]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, roundTripTimeNanos=665284}
+2018-02-08 17:24:01.141  INFO 1784 --- [cluster-ClusterId{value='5a7c5d6badb50f06f8801079', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2018-02-08 17:24:14.896  INFO 14528 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Starting MovieServiceApplication on ari with PID 14528 (C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service\target\classes started by memojja in C:\Users\memojja\Desktop\tezZ\my-graduation-thesis\movie-service)
+2018-02-08 17:24:14.898  INFO 14528 --- [restartedMain] c.e.m.m.MovieServiceApplication          : The following profiles are active: mongo
+2018-02-08 17:24:14.977  INFO 14528 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bb78ca3: startup date [Thu Feb 08 17:24:14 EET 2018]; root of context hierarchy
+2018-02-08 17:24:17.094  INFO 14528 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-02-08 17:24:17.983  INFO 14528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-02-08 17:24:18.006  INFO 14528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-08 17:24:18.009  INFO 14528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-08 17:24:18.223  INFO 14528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-08 17:24:18.224  INFO 14528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3251 ms
+2018-02-08 17:24:18.428  INFO 14528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-08 17:24:18.441  INFO 14528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-08 17:24:18.441  INFO 14528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-08 17:24:18.443  INFO 14528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-08 17:24:18.443  INFO 14528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-08 17:24:19.361  INFO 14528 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-02-08 17:24:19.362  INFO 14528 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2018-02-08 17:24:19.425  INFO 14528 --- [cluster-ClusterId{value='5a7c5d93adb50f38c08fab0d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2018-02-08 17:24:19.428  INFO 14528 --- [cluster-ClusterId{value='5a7c5d93adb50f38c08fab0d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 0]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, roundTripTimeNanos=1080494}
+2018-02-08 17:24:19.431  INFO 14528 --- [cluster-ClusterId{value='5a7c5d93adb50f38c08fab0d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2018-02-08 17:24:20.315  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/paging],methods=[GET]}" onto public org.springframework.data.domain.Page<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMoviesWithPageable(org.springframework.data.domain.Pageable)
+2018-02-08 17:24:20.318  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}/image],methods=[GET],produces=[image/jpeg]}" onto public org.springframework.http.ResponseEntity<byte[]> com.example.movieservice.movieservice.controller.MovieController.getMovieImageById(java.lang.String) throws java.io.IOException
+2018-02-08 17:24:20.318  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.MovieController.getAllMovies()
+2018-02-08 17:24:20.319  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movies/{id}],methods=[GET]}" onto public com.example.movieservice.movieservice.model.Movie com.example.movieservice.movieservice.controller.MovieController.getMovieById(java.lang.String)
+2018-02-08 17:24:20.319  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/recomendations/user/{id}],methods=[GET]}" onto public java.util.List<com.example.movieservice.movieservice.model.Movie> com.example.movieservice.movieservice.controller.RecomendationController.getRecomendationByUserId(java.lang.Integer)
+2018-02-08 17:24:20.321  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-08 17:24:20.325  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-08 17:24:20.326  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-08 17:24:20.327  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-08 17:24:20.330  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-08 17:24:20.331  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-08 17:24:21.041  INFO 14528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bb78ca3: startup date [Thu Feb 08 17:24:14 EET 2018]; root of context hierarchy
+2018-02-08 17:24:21.109  INFO 14528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 17:24:21.110  INFO 14528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 17:24:21.170  INFO 14528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-08 17:24:21.498  INFO 14528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-02-08 17:24:21.564  INFO 14528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-08 17:24:21.572  INFO 14528 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-08 17:24:21.573  INFO 14528 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-08 17:24:21.597  INFO 14528 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-08 17:24:21.617  INFO 14528 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-08 17:24:22.061  INFO 14528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-02-08 17:24:22.066  INFO 14528 --- [restartedMain] c.e.m.m.MovieServiceApplication          : Started MovieServiceApplication in 7.628 seconds (JVM running for 10.119)

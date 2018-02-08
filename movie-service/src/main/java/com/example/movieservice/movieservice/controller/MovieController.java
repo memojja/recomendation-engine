@@ -88,16 +88,19 @@ public class MovieController {
         log.info("MovieController - getMovieImageById() is called");
 
         String filename="images"+movieRepository.findOne(id).getUrl();
-        InputStream inputImage = new FileInputStream(filename);
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        byte[] buffer = new byte[512];
-        int l = inputImage.read(buffer);
-        while(l >= 0) {
-            outputStream.write(buffer, 0, l);
-            l = inputImage.read(buffer);
+        ByteArrayOutputStream outputStream;
+        HttpHeaders headers;
+        try (InputStream inputImage = new FileInputStream(filename)) {
+            outputStream = new ByteArrayOutputStream();
+            byte[] buffer = new byte[512];
+            int l = inputImage.read(buffer);
+            while (l >= 0) {
+                outputStream.write(buffer, 0, l);
+                l = inputImage.read(buffer);
+            }
+            headers = new HttpHeaders();
+            headers.set("Content-Type", "image/png");
         }
-        HttpHeaders headers = new HttpHeaders();
-        headers.set("Content-Type", "image/png");
-        return new ResponseEntity<byte[]>(outputStream.toByteArray(), headers, HttpStatus.OK);
+        return new ResponseEntity<>(outputStream.toByteArray(), headers, HttpStatus.OK);
     }
 }
