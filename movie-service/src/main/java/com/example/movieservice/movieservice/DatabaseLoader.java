@@ -6,6 +6,7 @@ import com.example.movieservice.movieservice.model.movie.MovieDTO;
 import com.example.movieservice.movieservice.repository.mongo.MovieRepository;
 import com.example.movieservice.movieservice.repository.mongo.RatingRepository;
 import com.jasongoodwin.monads.Try;
+import lombok.extern.log4j.Log4j;
 import org.apache.spark.SparkConf;
 import org.apache.spark.SparkContext;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -27,6 +28,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
+@Log4j
 public class DatabaseLoader implements CommandLineRunner {
 
     private final MovieRepository movieRepository;
@@ -40,49 +42,195 @@ public class DatabaseLoader implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
 
+        Immutable immutable = new Immutable("sadsad",4);
+
+
     }
 
-/*
-    @Override
-    public void run(String... strings) throws Exception {
+
+//    @Override
+//    public void run(String... strings) throws Exception {
+//
+//
+//
+//        SparkConf conf = new SparkConf();
+//        conf.setAppName("Spark MultipleContest Test");
+//        conf.set("spark.driver.allowMultipleContexts", "true");
+//        conf.setMaster("local");
+//        conf.getAll();
+//
+//        SparkContext sc = new SparkContext(conf);
+//        SQLContext sqlContext = new org.apache.spark.sql.SQLContext(sc);
+//        JavaSparkContext jsc =JavaSparkContext.fromSparkContext(sc);
+//
+//
+//
+//
+////        List<Movie> movieRDD = getMovieRDD(jsc);
+////        List<Movie> lastMovieList = getLinksRDD(jsc);
+//        //imdb and tmdb id
+////        mergeLinkRDDAndMovieRDD(movieRDD, lastMovieList);
+//
+//        RestTemplate restTemplate = new RestTemplate();
+//        List<Movie> movies = movieRepository.findAll();
+//        List<MovieDTO> movieDTOS  = new ArrayList<>();
+////140 , 556 ,638 , 647 , 716 , 739
+//        for (int i = 22906; i < movies.size(); i++) {
+//            if((!movies.get(i).getTmdbId().equals("********")) && !movies.get(i).getTmdbId().equals("999999999") ) {
+//                ResponseEntity<MovieDTO> resultGoMonth = updateMovieRepositoryFromImdbApiForMovieImageUrl(restTemplate, movies, movieDTOS, i);
+//                if(resultGoMonth.getStatusCode().is4xxClientError()) continue;
+//                downloadMovieImage(movies, i, resultGoMonth);
+//                log.info(i);
+//            }
+//        }
+//
+////        List<Rating> ratingRdd = getRatingRDD(jsc);
+////        saveRating(ratingRdd);
+//
+//
+//    }
+
+    private ResponseEntity<MovieDTO> updateMovieRepositoryFromImdbApiForMovieImageUrl(RestTemplate restTemplate, List<Movie> movies, List<MovieDTO> movieDTOS, int i) {
+        String url = "https://api.themoviedb.org/3/movie/" + movies.get(i).getTmdbId() + "?api_key=a44bfe5ae077fd38027c9c495a03e853";
+        final HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+        HttpEntity entity = new HttpEntity(httpHeaders);
+        ResponseEntity<MovieDTO> resultGoMonth=null;
+        try {
+            resultGoMonth = Optional.of(restTemplate.exchange(
+                    url,
+                    HttpMethod.GET,
+                    entity,
+                    MovieDTO.class)).orElse(new ResponseEntity<MovieDTO>(HttpStatus.OK) );
+
+            movieDTOS.add(resultGoMonth.getBody());
+            movies.get(i).setUrl(resultGoMonth.getBody().getPoster_path());
 
 
+            movieRepository.save(movies);
 
-        SparkConf conf = new SparkConf();
-        conf.setAppName("Spark MultipleContest Test");
-        conf.set("spark.driver.allowMultipleContexts", "true");
-        conf.setMaster("local");
-        conf.getAll();
+            System.out.println(i + " " + resultGoMonth.getBody());
+//            try {
+//                Thread.sleep(50L);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+            return resultGoMonth;
 
-        SparkContext sc = new SparkContext(conf);
-        SQLContext sqlContext = new org.apache.spark.sql.SQLContext(sc);
-        JavaSparkContext jsc =JavaSparkContext.fromSparkContext(sc);
-
-
-
-
-        List<Movie> movieRDD = getMovieRDD(jsc);
-        List<Movie> lastMovieList = getLinksRDD(jsc);
-        //imdb and tmdb id
-//        mergeLinkRDDAndMovieRDD(movieRDD, lastMovieList);
-
-        RestTemplate restTemplate = new RestTemplate();
-        List<Movie> movies = movieRepository.findAll();
-        List<MovieDTO> movieDTOS  = new ArrayList<>();
-
-        for (int i = 0; i < movies.size(); i++) {
-            if((!movies.get(i).getTmdbId().equals("********")) && !movies.get(i).getTmdbId().equals("999999999") ) {
-                ResponseEntity<MovieDTO> resultGoMonth = updateMovieRepositoryFromImdbApiForMovieImageUrl(movieRDD, restTemplate, movies, movieDTOS, i);
-                downloadMovieImage(movies, i, resultGoMonth);
-            }
+        }
+        catch (final Exception e) {
+            System.out.println("ZAAAA"+e);
+            return new ResponseEntity<MovieDTO>(HttpStatus.NOT_FOUND);
         }
 
-//        List<Rating> ratingRdd = getRatingRDD(jsc);
-//        saveRating(ratingRdd);
+    }
 
+    private void saveRating(List<Rating> ratingRdd) {
+        for (int i = 0; i < ratingRdd.size(); i++) {
+            ratingRdd.get(i).setId(Integer.toString(i));
+            System.out.println( i + "  " + ratingRdd.get(i));
+            ratingRepository.save(ratingRdd.get(i));
+        }
+    }
+
+    private List<Rating> getRatingRDD(JavaSparkContext jsc) {
+        return jsc.textFile("C:\\Users\\memojja\\Desktop\\BITIRME TEZI\\movie-service\\src\\main\\resources\\dataset\\20m\\ratings.csv")
+                .map(line -> {
+//                UserID::MovieID::Rating::Timestamp
+//                    String[] ratingArr = line.split("::");
+                    String[] ratingArr = line.split(",");
+                    Rating rating = new Rating();
+                    rating.setUserId(ratingArr[0]);
+                    rating.setMovieId(ratingArr[1]);
+                    rating.setRating(ratingArr[2]);
+                    rating.setTimeStamp(ratingArr[3]);
+                    return rating;
+                }).collect();
+    }
+
+    private void downloadMovieImage(List<Movie> movies, int i, ResponseEntity<MovieDTO> resultGoMonth) {
+        String imageUrl = "https://image.tmdb.org/t/p/w1280" +movies.get(i).getUrl();
+        System.out.println(resultGoMonth.toString());
+        if(resultGoMonth.getBody().getPoster_path() != null){
+
+
+        String destinationFilePath = "C:\\Users\\memojja\\Pictures\\recomendation-images\\"+resultGoMonth.getBody().getPoster_path().substring(1,resultGoMonth.getBody().getPoster_path().length()); // For windows something like c:\\path\to\file\test.jpg
+        System.out.println(destinationFilePath);
+        InputStream inputStream = null;
+        try {
+            inputStream = new URL(imageUrl).openStream();
+            Files.copy(inputStream, Paths.get(destinationFilePath));
+        } catch (IOException e) {
+            System.out.println("Exception Occurred " + e);
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    // Ignore
+                }
+            }
+        }        }
 
     }
-*/
+
+    // TmdbId inject movieRDD(movie.cvs) from  lastMovieList(links.cvs)
+    private void mergeLinkRDDAndMovieRDD(List<Movie> movieRDD, List<Movie> lastMovieList) {
+        Boolean isActive = false;
+        for (int i = 0; i <movieRDD.size() ; i++) {
+            isActive=false;
+            for (int a = 0; a <lastMovieList.size(); a++) {
+                if(movieRDD.get(i).getMovieId().equals(lastMovieList.get(a).getMovieId()  )){
+                    movieRDD.get(i).setTmdbId(lastMovieList.get(a).getTmdbId());
+                    movieRDD.get(i).setImdbId(lastMovieList.get(a).getImdbId());
+                    System.out.println("[[[[[["+movieRDD.get(i).getTmdbId());
+                    isActive=true;
+                }
+            }
+            if (!isActive){
+                movieRDD.get(i).setTmdbId("********");
+                movieRDD.get(i).setImdbId("********");
+                movieRDD.get(i).setUrl("********");
+            }
+    //           if save it make comment out
+               movieRepository.save(movieRDD.get(i));
+        }
+    }
+
+    private List<Movie> getLinksRDD(JavaSparkContext jsc) {
+        return jsc.textFile("C:\\Users\\memojja\\Desktop\\BITIRME TEZI\\movie-service\\src\\main\\resources\\dataset\\20m\\links.csv")
+                .map(line ->{
+                            String[] movieArr= line.split(",");
+                            Movie movie = new Movie();
+                            movie.setMovieId(movieArr[0]);
+                            movie.setTmdbId(Try.ofFailable(() -> movieArr[2]).orElse("*****"));
+
+                            movie.setImdbId(movieArr[1]);
+                            return movie;
+                        }
+                )
+                .collect();
+    }
+
+    private List<Movie> getMovieRDD(JavaSparkContext jsc) {
+        String url = "C:\\Users\\memojja\\Desktop\\tezZ\\my-graduation-thesis\\movie-service\\src\\main\\resources\\dataset\\20m\\movies.csv";
+        return jsc.textFile(url)
+                .map(line -> {
+//                    String[] movieArr = line.split("::");
+                    String[] movieArr = line.split(",");
+                    Movie movie = new Movie();
+//                    System.out.println(movieArr[2]);
+                    movie.setMovieId(movieArr[0]);
+                    movie.setName(movieArr[1]);
+                    movie.setUrl("********");
+                    return movie;
+                }).collect();
+    }
+
+
+
+
+
     private void getUgurMovie() {
         Rating rating = new Rating();
         rating.setId("1000230");
@@ -136,140 +284,5 @@ public class DatabaseLoader implements CommandLineRunner {
         rating4011.setRating("5");
         ratingRepository.save(rating4011);
     }
-
-    private void saveRating(List<Rating> ratingRdd) {
-        for (int i = 0; i < ratingRdd.size(); i++) {
-            ratingRdd.get(i).setId(Integer.toString(i));
-            System.out.println( i + "  " + ratingRdd.get(i));
-            ratingRepository.save(ratingRdd.get(i));
-        }
-    }
-
-    private List<Rating> getRatingRDD(JavaSparkContext jsc) {
-        return jsc.textFile("C:\\Users\\memojja\\Desktop\\BITIRME TEZI\\movie-service\\src\\main\\resources\\dataset\\20m\\ratings.csv")
-                .map(line -> {
-//                UserID::MovieID::Rating::Timestamp
-//                    String[] ratingArr = line.split("::");
-                    String[] ratingArr = line.split(",");
-                    Rating rating = new Rating();
-                    rating.setUserId(ratingArr[0]);
-                    rating.setMovieId(ratingArr[1]);
-                    rating.setRating(ratingArr[2]);
-                    rating.setTimeStamp(ratingArr[3]);
-                    return rating;
-                }).collect();
-    }
-
-    private ResponseEntity<MovieDTO> updateMovieRepositoryFromImdbApiForMovieImageUrl(List<Movie> movieRDD, RestTemplate restTemplate, List<Movie> movies, List<MovieDTO> movieDTOS, int i) {
-        String url = "https://api.themoviedb.org/3/movie/" + movies.get(i).getTmdbId() + "?api_key=a44bfe5ae077fd38027c9c495a03e853";
-        final HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-        HttpEntity entity = new HttpEntity(httpHeaders);
-        ResponseEntity<MovieDTO> resultGoMonth=null;
-        try {
-            resultGoMonth = Optional.of(restTemplate.exchange(
-                    url,
-                    HttpMethod.GET,
-                    entity,
-                    MovieDTO.class)).orElse(new ResponseEntity<MovieDTO>(HttpStatus.NOT_FOUND) );
-            System.out.println(i + "[" + movieRDD.get(i).getTmdbId() + "]" + resultGoMonth);
-            System.out.println(movies.get(i));
-            movieDTOS.add(resultGoMonth.getBody());
-            movies.get(i).setUrl(resultGoMonth.getBody().getPoster_path());
-
-
-            movieRepository.save(movies);
-
-            System.out.println(i + " " + resultGoMonth.getBody());
-//            try {
-//                Thread.sleep(50L);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-            return resultGoMonth;
-
-        }
-        catch (final Exception e) {
-            System.out.println(e);
-        }
-
-        return new ResponseEntity<MovieDTO>(HttpStatus.OK);
-
-    }
-
-    private void downloadMovieImage(List<Movie> movies, int i, ResponseEntity<MovieDTO> resultGoMonth) {
-        String imageUrl = "https://image.tmdb.org/t/p/w1280" +movies.get(i).getUrl();
-
-        String destinationFilePath = "images/"+resultGoMonth.getBody().getPoster_path().substring(1,resultGoMonth.getBody().getPoster_path().length()); // For windows something like c:\\path\to\file\test.jpg
-
-        InputStream inputStream = null;
-        try {
-            inputStream = new URL(imageUrl).openStream();
-            Files.copy(inputStream, Paths.get(destinationFilePath));
-        } catch (IOException e) {
-            System.out.println("Exception Occurred " + e);
-        } finally {
-            if (inputStream != null) {
-                try {
-                    inputStream.close();
-                } catch (IOException e) {
-                    // Ignore
-                }
-            }
-        }
-    }
-
-    // TmdbId inject movieRDD(movie.cvs) from  lastMovieList(links.cvs)
-    private void mergeLinkRDDAndMovieRDD(List<Movie> movieRDD, List<Movie> lastMovieList) {
-        Boolean isActive = false;
-        for (int i = 0; i <movieRDD.size() ; i++) {
-            isActive=false;
-            for (int a = 0; a <lastMovieList.size(); a++) {
-                if(movieRDD.get(i).getMovieId().equals(lastMovieList.get(a).getMovieId()  )){
-                    movieRDD.get(i).setTmdbId(lastMovieList.get(a).getTmdbId());
-                    movieRDD.get(i).setImdbId(lastMovieList.get(a).getImdbId());
-                    System.out.println("[[[[[["+movieRDD.get(i).getTmdbId());
-                    isActive=true;
-                }
-            }
-            if (!isActive){
-                movieRDD.get(i).setTmdbId("********");
-                movieRDD.get(i).setImdbId("********");
-                movieRDD.get(i).setUrl("********");
-            }
-    //           if save it make comment out
-               movieRepository.save(movieRDD.get(i));
-        }
-    }
-
-    private List<Movie> getLinksRDD(JavaSparkContext jsc) {
-        return jsc.textFile("C:\\Users\\memojja\\Desktop\\BITIRME TEZI\\movie-service\\src\\main\\resources\\dataset\\20m\\links.csv")
-                .map(line ->{
-                            String[] movieArr= line.split(",");
-                            Movie movie = new Movie();
-                            movie.setMovieId(movieArr[0]);
-                            movie.setTmdbId(Try.ofFailable(() -> movieArr[2]).orElse("*****"));
-
-                            movie.setImdbId(movieArr[1]);
-                            return movie;
-                        }
-                )
-                .collect();
-    }
-
-    private List<Movie> getMovieRDD(JavaSparkContext jsc) {
-        return jsc.textFile("C:\\Users\\memojja\\Desktop\\BITIRME TEZI\\movie-service\\src\\main\\resources\\dataset\\20m\\movies.csv")
-                .map(line -> {
-//                    String[] movieArr = line.split("::");
-                    String[] movieArr = line.split(",");
-                    Movie movie = new Movie();
-//                    System.out.println(movieArr[2]);
-                    movie.setMovieId(movieArr[0]);
-                    movie.setName(movieArr[1]);
-                    movie.setUrl("********");
-                    return movie;
-                }).collect();
-    }
-
 
 }

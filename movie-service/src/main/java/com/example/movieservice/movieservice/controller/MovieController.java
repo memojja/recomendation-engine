@@ -8,6 +8,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
@@ -16,8 +17,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin("*")
@@ -74,6 +77,25 @@ public class MovieController {
     public Movie getMovieById(@PathVariable("id")String id){
         log.info("MovieController - getMovieById() is called");
         return movieRepository.findOne(id);
+    }
+
+    @ApiOperation(value = "Get Movie List By The MovieName",notes = "Fetch the movie list")
+    @ApiResponses(value = {
+            @ApiResponse(code = 404, message = "Please check url"),
+            @ApiResponse(code = 200, message = "Movie List"),
+            @ApiResponse(code = 500, message = "Error occurred while fetching Movie list")
+    })    @GetMapping("/search")
+    public List<Movie> getMoviesByValues(@RequestParam("movieName")final String value){
+        if(value.isEmpty())
+            return new ArrayList<>();
+
+        List<Movie> movies = movieRepository.findAll();
+        List<Movie> searchedMovies = new ArrayList<>();
+        movies.stream().filter(movie -> {
+            String lowecaseMovieName = movie.getName().toLowerCase();
+            return lowecaseMovieName.contains(value.toLowerCase());
+        }).forEach(movie ->searchedMovies.add(movie) );
+        return searchedMovies;
     }
 
     @ApiOperation(value = "Get Movie's image", notes = "Fetch Movie's image")
