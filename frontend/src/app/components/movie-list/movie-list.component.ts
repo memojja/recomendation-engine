@@ -1,6 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import {MovieService} from "../../services/movie.service";
-import {Movie} from "../../models/movie";
+import { Component, OnInit,Inject,ViewChild } from '@angular/core';
+import {MovieService} from '../../services/movie.service';
+import {Movie} from '../../models/movie';
+import { DomSanitizer } from '@angular/platform-browser';
+import {Rating} from '../../models/rating';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
+import {MatSnackBar} from '@angular/material';
+import {User} from '../../models/user';
+import {AuthService} from '../../services/auth.service';
+import {Router} from '@angular/router';
+import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 
 @Component({
   selector: 'app-movie-list',
@@ -9,23 +17,159 @@ import {Movie} from "../../models/movie";
 })
 export class MovieListComponent implements OnInit {
 
-  movieList:Movie[];
-  selectedMovie:Movie;
+  isDisabled:Boolean = true;
+  movieList: Movie[];
+  recomendationMovie: Movie[] = new Array();
+  postMovieList: Array<Rating> = new Array();
+  selectedMovieList:Array<Movie> = new Array();
 
-  constructor(private service:MovieService) { }
+  searchedMovie: Movie[];
+  selectedMovie: Movie;
+  movieName: string;
+  modal: string;
+  sanitizedUrl;
+  currentRate = 10;
+  isSelectMovie: boolean;
+  movie:Movie = new Movie;
+  currentUser: User;
+  isRecomendationProcessing:Boolean = false;
+
+  dataSource : MatTableDataSource<Movie>;
+ displayedColumns = ['id', 'name', 'progress', 'color'];
 
 
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+
+  constructor(
+    public snackBar: MatSnackBar,
+    private service: MovieService, 
+    private sanitizer: DomSanitizer,
+    public dialog: MatDialog,
+    private authService: AuthService, public router: Router) { 
+      // this.currentUser = JSON.parse(localStorage.getItem('currentUser'));  
+  }
+  
   ngOnInit() {
-    this.getMovies();
+    this.isSelectMovie = true;
   }
 
-  getMovies(){
-    this.service.getMovies().subscribe(movies => this.movieList = movies);
+  applyFilter(filterValue: string) {
+    this.searchMovie(filterValue);
   }
 
-  getMovieById(id:number){
-    console.log('ddddddddddd'+id);
-    this.service.getMoviesById(id).subscribe(movie => this.selectedMovie = movie);
+  openDialog() {
+    let dialog  = this.dialog.open(DialogDataExampleDialog, {
+      data: {
+        animal: 'panda'
+      }
+    });
+
+    dialog.afterClosed()
+      .subscribe(selection => {
+        if (selection) {
+          this.postRating();
+        } else {
+          // User clicked 'Cancel' or clicked outside the dialog
+        }
+      });
+  }
+  
+  
+  openSnackBar() {
+    this.snackBar.openFromComponent(PizzaPartyComponent, {
+      duration: 500,
+    });
+  }
+  
+
+
+  getMovies() {
+    this.service.getMovies()
+                  .subscribe(movies => this.movieList = movies);
+  }
+
+  getMovieById(id: number, url: string) {
+    this.service.getMoviesById(id).subscribe(movie => {
+      this.selectedMovie = movie;
+      const url3: string = './assets/recomendation-images' + url;
+      this.sanitizedUrl = url3;
+      // this.sanitizedUrl = this.sanitizer.bypassSecurityTrustUrl(url3);
+    });
+  }
+
+  searchMovie(movieName: string) {
+
+    console.log('searchMovie is entered by ' + movieName);
+    if (movieName.length > 2) {
+        this.service.searchMovie(movieName).subscribe(movies => {
+        this.searchedMovie = movies;
+        this.dataSource = new MatTableDataSource(movies);
+        this.dataSource.filter = movieName.trim().toLowerCase();
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+      });
+    }
+    this.modal = 'modal on';
+
+  }
+
+
+  postRating() {
+    let ratingg = new Rating();
+    let movie = new Movie();
+    ratingg.movieId = this.selectedMovie.movieId;
+    ratingg.rating = (this.currentRate/2).toString();
+     this.postMovieList.push(ratingg);
+    movie.name = this.selectedMovie.name;
+    movie.url = './assets/recomendation-images' + this.selectedMovie.url;
+    this.selectedMovieList.push(movie);
+    this.service.addSelectedMovie(movie);
+    if(this.selectedMovieList.length == 5) this.recomendation();
+    if(this.selectedMovieList.length > 6) this.isDisabled= false;
+  }
+
+  recomendation() {
+    this.isRecomendationProcessing=true;
+    this.recomendationMovie =  this.service.recomendation(this.postMovieList);
+
+  }
+
+  updateSelectedMovie(movie: Movie){
+    this.selectedMovie.movieId = movie.movieId;
   }
 
 }
+
+
+@Component({
+  selector: 'snack-bar-component-example-snack',
+  templateUrl: 'snack-bar-component-example-snack.html',
+  styles: [`.example-pizza-party { color: hotpink; }`],
+})
+export class PizzaPartyComponent {}
+
+
+
+import { MatDialogRef } from '@angular/material';
+
+@Component({
+  selector: 'dialog-data-example-dialog',
+  templateUrl: 'dialog-data-example-dialog.html',
+})
+export class DialogDataExampleDialog {
+  // constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
+  constructor(public dialogRef: MatDialogRef<DialogDataExampleDialog>) { }
+
+  currentRate:number;
+
+
+  
+  confirmSelection() {
+    this.dialogRef.close(this.currentRate);
+
+  }
+
+}
+

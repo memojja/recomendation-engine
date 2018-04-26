@@ -1,6 +1,7 @@
 export class Movie {
-  id:number;
-  name:string;
-  constructor(){}
+  movieId: string;
+  name: string;
+  url:string;
+  constructor() {}
 }
 

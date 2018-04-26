@@ -1,10 +1,138 @@
-<p>
-  movie-list works!
-</p>
+<!-- <button mat-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+  Pizza partysadasd
+</button> -->
 
+<!-- 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="mat-app-background basic-container">
+  <app-searchbar>loading</app-searchbar>
+</div> -->
 
-<div *ngFor="let movie of movieList" (click)="getMovieById(movie.movieId)">
-{{selectedMovie?.movieId}}
+<mat-card>
+  <mat-card-content>
+    <!-- <h2 class="example-h2">Film Giriniz</h2> -->
+    <mat-form-field class="example-full-width">
+      <input  matInput placeholder="Film giriniz.." 
+              type="text" [(ngModel)]="movieName"  
+              (keypress)="searchMovie(movieName)"  (keyup)="applyFilter($event.target.value)"/>
 
-  {{movie.name}}
+    </mat-form-field>
+
+    <div class="button-row">
+       
+      
+
+        <div *ngIf="isDisabled">
+            <div class="button-row">
+                <button 
+                mat-raised-button color="primary" 
+                *ngIf="isSelectMovie" type="button" 
+                class="btn btn-primary" (click)="recomendation()" 
+                disabled >Film Oner</button>
+            </div>
+        </div>
+        <div *ngIf="!isDisabled">
+            <div class="button-row">
+                <button 
+                mat-raised-button color="primary" 
+                *ngIf="isSelectMovie" type="button" 
+                class="btn btn-primary" (click)="recomendation()" 
+                >Film Oner</button>
+            </div>
+        </div>
 </div>
+
+  </mat-card-content>
+
+
+  <!-- <div class="example-header">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+  </div>
+   -->
+  <div  *ngIf="movieName"  class="example-container mat-elevation-z8">
+  
+    <mat-table [dataSource]="dataSource" matSort>
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+  
+      Progress Column
+      <ng-container matColumnDef="progress">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Progress </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.progress}}% </mat-cell>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+  
+      <!-- Color Column -->
+      <ng-container matColumnDef="color">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Color </mat-header-cell>
+        <mat-cell *matCellDef="let row" [style.color]="row.color"> 
+          <div  (click)="getMovieById(row.movieId,row.url)">
+
+       
+            <button mat-button (click)="openDialog()">Detay</button>
+          </div>
+        
+        </mat-cell>
+
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+
+      <button mat-button (click)="openDialog()">Detay1</button>
+
+    </mat-table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+
+
+<!--   
+<div *ngIf="recomendationMovie">
+  <br/>
+  <hr/>
+  <br/>
+  <span *ngFor="let a of recomendationMovie">
+    <img style="width: 68px;height: 100px;" [src]="a.url">
+    {{a.name}}
+  </span>
+  <br/>
+</div>
+
+<div *ngIf="selectedMovieList">
+  <span *ngFor="let a of selectedMovieList">
+    {{a.name}}
+  </span>
+
+</div>
+<hr/>
+
+  <div *ngIf="movieName">
+
+    <div *ngFor="let movie of searchedMovie"  (click)="getMovieById(movie.movieId,movie.url)">
+      <hr>
+      <div *ngIf="selectedMovie != movie">
+
+        {{movie.name}}
+
+        <button (click)="x" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+          Detay
+        </button>
+    
+        <button mat-button (click)="openDialog()">Detay</button>
+
+      </div>
+    </div>
+  </div> -->

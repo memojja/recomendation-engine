@@ -1,0 +1,43 @@
+/*input[type=text] {*/
+  /*width: 130px;*/
+  /*-webkit-transition: width 0.4s ease-in-out;*/
+  /*transition: width 0.4s ease-in-out;*/
+/*}*/
+
+/*!* When the input field gets focus, change its width to 100% *!*/
+/*input[type=text]:focus {*/
+  /*width: 100%;*/
+/*}*/
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* 
+@import '~@angular/material/theming'; */
+
+.spacer {
+  -webkit-box-flex: 1;
+  -ms-flex:  1 1 auto;
+  flex:  1 1 auto;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.basic-container {
+  padding: 5px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}

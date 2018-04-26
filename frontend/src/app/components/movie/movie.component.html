@@ -1,0 +1,55 @@
+<mat-toolbar color="primary">
+    <i class="material-icons" ></i>
+    <i class="material-icons" >movie_creation</i>
+        <span>{{title}}</span>
+    <span class="spacer"></span>
+    <span class="example-fill-remaining-space"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" >
+      <button mat-menu-item (click)="logout()" >
+        <mat-icon>dialpad</mat-icon>
+        <span>Logout</span>
+      </button>
+      <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+      </button> 
+      <!-- <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voicemail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button> -->
+    </mat-menu>
+    
+</mat-toolbar>
+
+<mat-tab-group>
+  
+      <mat-tab label="Movies">                
+        <app-movie-list> </app-movie-list>
+      </mat-tab>
+    
+      <mat-tab label="Rating Movie">
+          <div class="movie-recomendation-container">
+                  <app-movie-detail
+                      [name]='"selectedMovie"'>
+                  </app-movie-detail>
+            </div>
+      </mat-tab>
+  
+      <mat-tab label="Recomendations"> 
+          <div class="movie-recomendation-container">
+              <app-movie-detail
+                  [name]='"recomendations"'>
+              </app-movie-detail>
+        </div>               
+      </mat-tab>
+  
+      
+</mat-tab-group>
+  

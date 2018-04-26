@@ -7,7 +7,8 @@ import {Movie} from "./models/movie";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MovieList';
+  title = 'Online Movie Recomendation Engine';
+  static API_URL="http://localhost:8081";
 
   movie:Movie = new Movie;
 
