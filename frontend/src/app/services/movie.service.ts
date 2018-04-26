@@ -20,6 +20,7 @@ export class MovieService {
 
   movie:Movie = new Movie;
   currentUser: User;
+  currentMovie:Movie;
   constructor(private authService: AccountService, public router: Router,private http: HttpClient
     ,  public snackBar: MatSnackBar) {
 
@@ -45,7 +46,8 @@ export class MovieService {
     );
   }
 
-  getMoviesById(id: number): Observable<Movie> {
+  // getMoviesById(id: number): Observable<Movie> {
+    getMoviesById(id: string): Observable<Movie> {
     return this.http.get<Movie>(this.apiUrls.getUrl() + '/' + id 
   
   ).pipe(
@@ -69,26 +71,19 @@ export class MovieService {
   }
 
   recomendation(postMovieList: Rating[]) {
-    console.log('recomendationss');
-    console.log(postMovieList);
+    console.log('recomendationss' + postMovieList);
      this.http.post('http://localhost:8081/recomendations', postMovieList)
       .subscribe(
         (states: Movie[]) => {
           states.forEach( state =>this.recomendationMovie.push(state) );
           // this.recomendationMovie = states;
-     
             this.openSnackBar();
-   
         }
       );
     return this.recomendationMovie;
   }
 
   getSelectedMovie(){
-    let movie:Movie = new Movie();
-    movie.name='halo';
-
-    this.addSelectedMovie(movie);
     return this.selectedMovie;
   }
 
@@ -98,9 +93,16 @@ export class MovieService {
 
 
   getRecomendationList(){
-    return  this.recomendationMovie;
+    return this.recomendationMovie;
   }
 
+
+  setCurrentMovie(movie:Movie){
+    this.currentMovie=movie;
+  }
+  getCurrentMovie(){
+    return this.currentMovie;
+  }
 
 
 }

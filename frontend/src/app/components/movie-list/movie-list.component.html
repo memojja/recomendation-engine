@@ -54,19 +54,23 @@
   <div  *ngIf="movieName"  class="example-container mat-elevation-z8">
   
     <mat-table [dataSource]="dataSource" matSort>
-  
+
       <!-- ID Column -->
-      <ng-container matColumnDef="id">
-        <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
-        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      <ng-container matColumnDef="id" >
+        <mat-header-cell *matHeaderCellDef mat-sort-header > ID </mat-header-cell>
+         <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
       </ng-container>
   
-      Progress Column
+      <!-- Progress Column -->
+     
       <ng-container matColumnDef="progress">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Progress </mat-header-cell>
+ 
         <mat-cell *matCellDef="let row"> {{row.progress}}% </mat-cell>
+     
       </ng-container>
-  
+   
+
       <!-- Name Column -->
       <ng-container matColumnDef="name">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
@@ -76,13 +80,13 @@
       <!-- Color Column -->
       <ng-container matColumnDef="color">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Color </mat-header-cell>
-        <mat-cell *matCellDef="let row" [style.color]="row.color"> 
-          <div  (click)="getMovieById(row.movieId,row.url)">
-
-       
-            <button mat-button (click)="openDialog()">Detay</button>
-          </div>
         
+        <mat-cell *matCellDef="let row" [style.color]="row.color"> 
+            <div (click)="changeSelect(row)"> 
+                <div  (click)="getMovieById(row.movieId,row.url)">
+                  <button mat-button (click)="openDialog(row)">Detay</button>
+                </div>
+          </div>
         </mat-cell>
 
       </ng-container>
@@ -92,6 +96,7 @@
       </mat-row>
 
       <button mat-button (click)="openDialog()">Detay1</button>
+
 
     </mat-table>
   

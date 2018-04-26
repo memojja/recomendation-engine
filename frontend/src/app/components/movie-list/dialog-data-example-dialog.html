@@ -1,20 +1,38 @@
-<h2 mat-dialog-title>Movie Detail</h2>
+<h2 mat-dialog-title>{{data?.name}}</h2>
 
-<mat-dialog-content [(ngModel)]="currentRate">
-    <h2 class="modal-title" id="exampleModal3Label">{{selectedMovie?.name}}</h2>
-    <h4 class="modal-title" id="exampleModal3Label">{{selectedMovie?.name}}</h4>
-    
-    <ngb-rating [(rate)]="currentRate"></ngb-rating>
-    <div *ngIf="currentRate">
-        <pre>Rate: <b>{{currentRate}}</b></pre>
-    </div>
+<mat-dialog-content [(ngModel)]="currentRate" >
+        <img width="150px" height="150px" src="https://material.angular.io/assets/img/examples/shiba2.jpg"/>
+        <ngb-rating [(rate)]="currentRate"></ngb-rating>
+       <div *ngIf="currentRate" >
+           <pre>Rate: <b>{{currentRate}}</b></pre>
+       </div>
+
+       {{data?.overview}}
+
+        <!-- <mat-grid-list cols="2" >
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+
+            <mat-grid-tile>
+                <img width="150px" height="150px" src="https://material.angular.io/assets/img/examples/shiba2.jpg"/>
+                <ngb-rating [(rate)]="currentRate"></ngb-rating>
+               <div *ngIf="currentRate" style="float: left; overflow: hidden;">
+                   <pre>Rate: <b>{{currentRate}}</b></pre>
+               </div>
+            </mat-grid-tile>
+
+            <mat-grid-tile>            
+                {{data?.overview}}
+            </mat-grid-tile>
+
+        </mat-grid-list>         -->
+  
 </mat-dialog-content>
 
 <mat-dialog-actions>
         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button *ngIf="isSelectMovie" type="button" class="btn btn-primary" (click)="postRating()">Save changes</button>
       -->
-
   <button mat-button mat-dialog-close>Cancel</button>
   <button mat-button  (click)="confirmSelection()">Give me a rate</button>
 

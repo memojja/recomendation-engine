@@ -3,7 +3,7 @@ import {MovieService} from '../../services/movie.service';
 import {Movie} from '../../models/movie';
 import { DomSanitizer } from '@angular/platform-browser';
 import {Rating} from '../../models/rating';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
+import {MatDialog, MAT_DIALOG_DATA,MatDialogConfig} from '@angular/material';
 import {MatSnackBar} from '@angular/material';
 import {User} from '../../models/user';
 import {AuthService} from '../../services/auth.service';
@@ -35,19 +35,21 @@ export class MovieListComponent implements OnInit {
   isRecomendationProcessing:Boolean = false;
 
   dataSource : MatTableDataSource<Movie>;
- displayedColumns = ['id', 'name', 'progress', 'color'];
-
+  displayedColumns = ['id', 'name', 'progress', 'color'];
+  changedMovie:Movie;
 
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
   constructor(
+    private movieService :MovieService,
     public snackBar: MatSnackBar,
     private service: MovieService, 
     private sanitizer: DomSanitizer,
     public dialog: MatDialog,
-    private authService: AuthService, public router: Router) { 
+    private authService: AuthService, 
+    public router: Router) { 
       // this.currentUser = JSON.parse(localStorage.getItem('currentUser'));  
   }
   
@@ -58,13 +60,38 @@ export class MovieListComponent implements OnInit {
   applyFilter(filterValue: string) {
     this.searchMovie(filterValue);
   }
+  async  changeSelect(movie:Movie){
 
-  openDialog() {
-    let dialog  = this.dialog.open(DialogDataExampleDialog, {
-      data: {
-        animal: 'panda'
-      }
-    });
+    console.log('workinggg');
+    console.log(movie);
+    
+    this.changedMovie=movie;
+    await this.getMovieById(movie.movieId,movie.url);
+    
+  }
+
+  openDialog(movie:Movie) {
+    this.movieService.setCurrentMovie(this.changedMovie);
+
+
+    let config: MatDialogConfig = {
+      disableClose: false,
+      width: '600px',
+      height: '600px',
+      // position: {
+      //   top: '',
+      //   bottom: '',
+      //   left: '',
+      //   right: ''
+      // },
+      data:  movie
+    };
+    
+
+    let dialog  = this.dialog.open(DialogDataExampleDialog, 
+      config
+      // { data:movie}
+  );
 
     dialog.afterClosed()
       .subscribe(selection => {
@@ -90,7 +117,8 @@ export class MovieListComponent implements OnInit {
                   .subscribe(movies => this.movieList = movies);
   }
 
-  getMovieById(id: number, url: string) {
+  // getMovieById(id: number, url: string) {
+   getMovieById(id: string, url: string) {
     this.service.getMoviesById(id).subscribe(movie => {
       this.selectedMovie = movie;
       const url3: string = './assets/recomendation-images' + url;
@@ -104,11 +132,11 @@ export class MovieListComponent implements OnInit {
     console.log('searchMovie is entered by ' + movieName);
     if (movieName.length > 2) {
         this.service.searchMovie(movieName).subscribe(movies => {
-        this.searchedMovie = movies;
-        this.dataSource = new MatTableDataSource(movies);
-        this.dataSource.filter = movieName.trim().toLowerCase();
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
+          this.searchedMovie = movies;
+          this.dataSource = new MatTableDataSource(movies);
+          this.dataSource.filter = movieName.trim().toLowerCase();
+          this.dataSource.paginator = this.paginator;
+          this.dataSource.sort = this.sort;
       });
     }
     this.modal = 'modal on';
@@ -122,7 +150,10 @@ export class MovieListComponent implements OnInit {
     ratingg.movieId = this.selectedMovie.movieId;
     ratingg.rating = (this.currentRate/2).toString();
      this.postMovieList.push(ratingg);
-    movie.name = this.selectedMovie.name;
+     movie = this.selectedMovie;
+     console.log('selected movie : ');
+     console.log(movie);
+    // movie.name = this.selectedMovie.name;
     movie.url = './assets/recomendation-images' + this.selectedMovie.url;
     this.selectedMovieList.push(movie);
     this.service.addSelectedMovie(movie);
@@ -158,14 +189,23 @@ import { MatDialogRef } from '@angular/material';
   selector: 'dialog-data-example-dialog',
   templateUrl: 'dialog-data-example-dialog.html',
 })
-export class DialogDataExampleDialog {
+export class DialogDataExampleDialog  implements OnInit{
   // constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
-  constructor(public dialogRef: MatDialogRef<DialogDataExampleDialog>) { }
+  constructor(public dialogRef: MatDialogRef<DialogDataExampleDialog>,
+              private movieService:MovieService,
+              @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   currentRate:number;
-
-
+  selectedMovie:Movie;
   
+  
+  ngOnInit(){
+    console.log('asas');
+    console.log(this.data);
+      // this.selectedMovie = this.movieService.getCurrentMovie();
+
+  }
+
   confirmSelection() {
     this.dialogRef.close(this.currentRate);
 

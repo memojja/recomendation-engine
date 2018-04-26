@@ -2572,3 +2572,1149 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2018-04-26 18:34:55.045  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
 2018-04-26 18:35:23.571 ERROR 18264 --- [http-nio-8081-exec-9] c.e.m.m.r.s.JwtAuthenticationEntryPoint  : Responding with unauthorized error. Message - Full authentication is required to access this resource
 2018-04-26 18:35:26.682 ERROR 18264 --- [http-nio-8081-exec-1] c.e.m.m.r.s.JwtAuthenticationEntryPoint  : Responding with unauthorized error. Message - Full authentication is required to access this resource
+2018-04-26 18:36:59.763  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 19
+2018-04-26 18:36:59.765  INFO 18264 --- [block-manager-slave-async-thread-pool-5] org.apache.spark.storage.BlockManager    : Removing RDD 231
+2018-04-26 18:36:59.768  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 231
+2018-04-26 18:36:59.769  INFO 18264 --- [block-manager-slave-async-thread-pool-6] org.apache.spark.storage.BlockManager    : Removing RDD 110
+2018-04-26 18:36:59.769  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 110
+2018-04-26 18:36:59.770  INFO 18264 --- [dispatcher-event-loop-1] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_54_piece0 on 172.21.241.193:50525 in memory (size: 18.8 KB, free: 1923.8 MB)
+2018-04-26 18:36:59.771  INFO 18264 --- [dispatcher-event-loop-5] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_53_piece0 on 172.21.241.193:50525 in memory (size: 18.1 KB, free: 1923.8 MB)
+2018-04-26 18:36:59.772  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 16
+2018-04-26 18:36:59.773  INFO 18264 --- [block-manager-slave-async-thread-pool-7] org.apache.spark.storage.BlockManager    : Removing RDD 140
+2018-04-26 18:36:59.773  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 140
+2018-04-26 18:36:59.774  INFO 18264 --- [block-manager-slave-async-thread-pool-5] org.apache.spark.storage.BlockManager    : Removing RDD 180
+2018-04-26 18:36:59.774  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 180
+2018-04-26 18:36:59.775  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 22
+2018-04-26 18:36:59.775  INFO 18264 --- [block-manager-slave-async-thread-pool-6] org.apache.spark.storage.BlockManager    : Removing RDD 232
+2018-04-26 18:36:59.776  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 232
+2018-04-26 18:36:59.777  INFO 18264 --- [block-manager-slave-async-thread-pool-8] org.apache.spark.storage.BlockManager    : Removing RDD 170
+2018-04-26 18:36:59.777  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 170
+2018-04-26 18:36:59.777  INFO 18264 --- [dispatcher-event-loop-5] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_52_piece0 on 172.21.241.193:50525 in memory (size: 18.8 KB, free: 1925.7 MB)
+2018-04-26 18:36:59.778  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 18
+2018-04-26 18:36:59.778  INFO 18264 --- [block-manager-slave-async-thread-pool-8] org.apache.spark.storage.BlockManager    : Removing RDD 130
+2018-04-26 18:36:59.780  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 130
+2018-04-26 18:36:59.780  INFO 18264 --- [block-manager-slave-async-thread-pool-4] org.apache.spark.storage.BlockManager    : Removing RDD 210
+2018-04-26 18:36:59.780  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 210
+2018-04-26 18:36:59.781  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 15
+2018-04-26 18:36:59.781  INFO 18264 --- [block-manager-slave-async-thread-pool-5] org.apache.spark.storage.BlockManager    : Removing RDD 150
+2018-04-26 18:36:59.781  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 150
+2018-04-26 18:36:59.781  INFO 18264 --- [block-manager-slave-async-thread-pool-4] org.apache.spark.storage.BlockManager    : Removing RDD 200
+2018-04-26 18:36:59.781  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 200
+2018-04-26 18:36:59.782  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 23
+2018-04-26 18:36:59.782  INFO 18264 --- [block-manager-slave-async-thread-pool-7] org.apache.spark.storage.BlockManager    : Removing RDD 190
+2018-04-26 18:36:59.783  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 190
+2018-04-26 18:36:59.783  INFO 18264 --- [block-manager-slave-async-thread-pool-9] org.apache.spark.storage.BlockManager    : Removing RDD 230
+2018-04-26 18:36:59.783  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 230
+2018-04-26 18:36:59.784  INFO 18264 --- [block-manager-slave-async-thread-pool-4] org.apache.spark.storage.BlockManager    : Removing RDD 120
+2018-04-26 18:36:59.784  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 120
+2018-04-26 18:36:59.784  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 20
+2018-04-26 18:36:59.786  INFO 18264 --- [dispatcher-event-loop-3] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_50_piece0 on 172.21.241.193:50525 in memory (size: 18.7 KB, free: 1926.5 MB)
+2018-04-26 18:36:59.786  INFO 18264 --- [block-manager-slave-async-thread-pool-6] org.apache.spark.storage.BlockManager    : Removing RDD 160
+2018-04-26 18:36:59.786  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 160
+2018-04-26 18:36:59.787  INFO 18264 --- [block-manager-slave-async-thread-pool-4] org.apache.spark.storage.BlockManager    : Removing RDD 225
+2018-04-26 18:36:59.787  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 225
+2018-04-26 18:36:59.787  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 14
+2018-04-26 18:36:59.788  INFO 18264 --- [dispatcher-event-loop-2] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_49_piece0 on 172.21.241.193:50525 in memory (size: 17.9 KB, free: 1926.5 MB)
+2018-04-26 18:36:59.788  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 21
+2018-04-26 18:36:59.789  INFO 18264 --- [dispatcher-event-loop-5] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_55_piece0 on 172.21.241.193:50525 in memory (size: 18.6 KB, free: 1926.5 MB)
+2018-04-26 18:36:59.789  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 17
+2018-04-26 18:36:59.789  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 13
+2018-04-26 18:36:59.790  INFO 18264 --- [dispatcher-event-loop-4] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_51_piece0 on 172.21.241.193:50525 in memory (size: 18.0 KB, free: 1926.6 MB)
+2018-04-26 18:38:37.350  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:38:38.597  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:39:42.728  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:44.138  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:44.456  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:44.628  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:44.659  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:39:44.664  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:44.719  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:44.762  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:45.634  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:46.005  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:46.046  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:39:46.127  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:33.438  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:35.672  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 6
+2018-04-26 18:43:35.677  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 7
+2018-04-26 18:43:35.685  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 0
+2018-04-26 18:43:35.686  INFO 18264 --- [block-manager-slave-async-thread-pool-14] org.apache.spark.storage.BlockManager    : Removing RDD 70
+2018-04-26 18:43:35.687  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 70
+2018-04-26 18:43:35.692  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 4
+2018-04-26 18:43:35.693  INFO 18264 --- [dispatcher-event-loop-5] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_1_piece0 on 172.21.241.193:50525 in memory (size: 3.7 KB, free: 1926.6 MB)
+2018-04-26 18:43:35.693  INFO 18264 --- [block-manager-slave-async-thread-pool-16] org.apache.spark.storage.BlockManager    : Removing RDD 13
+2018-04-26 18:43:35.694  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 13
+2018-04-26 18:43:35.698  INFO 18264 --- [block-manager-slave-async-thread-pool-14] org.apache.spark.storage.BlockManager    : Removing RDD 9
+2018-04-26 18:43:35.698  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 9
+2018-04-26 18:43:35.698  INFO 18264 --- [block-manager-slave-async-thread-pool-15] org.apache.spark.storage.BlockManager    : Removing RDD 19
+2018-04-26 18:43:35.698  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 19
+2018-04-26 18:43:35.699  INFO 18264 --- [block-manager-slave-async-thread-pool-13] org.apache.spark.storage.BlockManager    : Removing RDD 3
+2018-04-26 18:43:35.699  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 3
+2018-04-26 18:43:35.699  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 9
+2018-04-26 18:43:35.700  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 10
+2018-04-26 18:43:35.700  INFO 18264 --- [block-manager-slave-async-thread-pool-13] org.apache.spark.storage.BlockManager    : Removing RDD 50
+2018-04-26 18:43:35.704  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 50
+2018-04-26 18:43:35.705  INFO 18264 --- [block-manager-slave-async-thread-pool-17] org.apache.spark.storage.BlockManager    : Removing RDD 12
+2018-04-26 18:43:35.705  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 12
+2018-04-26 18:43:35.706  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 3
+2018-04-26 18:43:35.706  INFO 18264 --- [dispatcher-event-loop-7] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_0_piece0 on 172.21.241.193:50525 in memory (size: 419.0 B, free: 1982.6 MB)
+2018-04-26 18:43:35.706  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 8
+2018-04-26 18:43:35.706  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 5
+2018-04-26 18:43:35.706  INFO 18264 --- [block-manager-slave-async-thread-pool-16] org.apache.spark.storage.BlockManager    : Removing RDD 30
+2018-04-26 18:43:35.712  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 30
+2018-04-26 18:43:35.712  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 1
+2018-04-26 18:43:35.712  INFO 18264 --- [block-manager-slave-async-thread-pool-13] org.apache.spark.storage.BlockManager    : Removing RDD 60
+2018-04-26 18:43:35.712  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 60
+2018-04-26 18:43:35.712  INFO 18264 --- [block-manager-slave-async-thread-pool-17] org.apache.spark.storage.BlockManager    : Removing RDD 40
+2018-04-26 18:43:35.712  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 40
+2018-04-26 18:43:35.712  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 12
+2018-04-26 18:43:35.712  INFO 18264 --- [block-manager-slave-async-thread-pool-15] org.apache.spark.storage.BlockManager    : Removing RDD 18
+2018-04-26 18:43:35.713  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 18
+2018-04-26 18:43:35.713  INFO 18264 --- [block-manager-slave-async-thread-pool-14] org.apache.spark.storage.BlockManager    : Removing RDD 17
+2018-04-26 18:43:35.713  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 17
+2018-04-26 18:43:35.714  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 11
+2018-04-26 18:43:35.714  INFO 18264 --- [block-manager-slave-async-thread-pool-17] org.apache.spark.storage.BlockManager    : Removing RDD 90
+2018-04-26 18:43:35.714  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 90
+2018-04-26 18:43:35.714  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned shuffle 2
+2018-04-26 18:43:35.714  INFO 18264 --- [block-manager-slave-async-thread-pool-14] org.apache.spark.storage.BlockManager    : Removing RDD 100
+2018-04-26 18:43:35.721  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 100
+2018-04-26 18:43:35.721  INFO 18264 --- [block-manager-slave-async-thread-pool-19] org.apache.spark.storage.BlockManager    : Removing RDD 80
+2018-04-26 18:43:35.721  INFO 18264 --- [Spark Context Cleaner] org.apache.spark.ContextCleaner          : Cleaned RDD 80
+2018-04-26 18:43:35.917  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:35.929  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:35.969  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:36.011  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:36.182  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:36.264  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:37.403  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:37.462  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:37.487  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:37.548  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:37.595  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:38.708  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:38.732  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:38.750  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:50.271  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:51.367  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:51.416  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:43:51.434  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:08.615  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:14.713  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:15.735  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:15.745  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:30.426  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:31.956  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:32.280  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:32.289  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:44:32.715  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:32.736  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:32.742  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:32.770  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:44:33.141  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:43.747  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:45.199  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:45.381  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:45.428  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:45.484  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:45.522  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:45.560  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:46.255  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:48:46.434  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:49:38.061  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:49:38.616  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:49:39.434  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:49:39.916  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:49:39.930  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:49:39.944  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:49:39.972  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:49:40.348  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:01.215  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:01.527  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:01.547  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:01.872  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:02.852  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:02.885  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:50:02.909  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:03.155  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:03.614  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:03.817  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:03.818  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:50:24.792  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:50:55.015  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:51:45.545  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:51:46.245  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:51:47.031  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:51:47.040  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:51:47.260  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:51:47.274  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:51:47.285  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:51:47.312  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:51:47.701  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:15.254  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:15.728  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:15.788  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:15.905  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:17.414  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:17.459  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:52:17.466  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:17.797  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:17.995  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:18.011  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:18.050  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:52:25.934  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:53:59.897  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:00.319  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:00.557  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:00.575  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:01.509  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:01.520  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:54:01.524  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:02.417  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:02.571  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:02.644  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:02.661  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:25.848  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:26.509  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:26.770  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:26.791  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:26.921  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:27.217  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:27.510  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:28.112  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:28.404  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:28.410  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:29.130  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:29.138  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:54:29.304  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:29.516  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:29.982  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:30.208  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:30.220  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:54:30.763  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:54:32.801  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:57:14.670  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:14.920  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:14.995  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:15.013  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:15.504  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 18:57:16.138  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:16.502  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:16.524  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:16.545  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 18:57:16.556  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:03.693  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:04.644  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:04:04.871  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:04.893  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:04.904  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:11.873  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:04:58.033  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:58.868  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:59.444  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:59.602  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:59.632  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:59.645  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:04:59.684  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:05:00.106  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:05:02.226  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:05:06.739  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:06:40.439  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:06:40.930  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:06:41.623  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:06:41.686  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:06:41.723  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:06:41.753  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:13.642  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:14.114  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:14.779  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:14.828  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:14.836  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:15.538  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:16.242  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:18.291  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:20.595  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:31.389  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:32.055  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:32.857  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:33.096  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:33.141  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:33.156  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:33.631  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:34.770  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:36.387  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:38.530  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:42.675  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:44.056  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:44.063  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:44.793  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:45.061  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:45.185  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:45.198  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:45.933  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:46.185  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:46.275  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:07:47.739  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:07:50.275  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:08:02.427  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:08:23.189  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:08:35.207  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:08:37.179  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:08:42.873  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:08:44.506  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:09:25.673  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:09:26.178  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:09:26.529  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:09:26.722  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:09:27.259  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:09:27.269  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:09:27.288  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:09:27.520  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:41.574  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:42.165  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:42.174  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:10:42.528  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:43.250  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:43.273  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:43.288  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:43.329  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:10:43.538  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:11:54.461  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:11:54.987  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:11:56.328  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:11:56.414  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:11:56.424  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:11:56.431  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:11:56.454  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:06.398  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:07.066  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:12:07.197  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:07.898  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:07.906  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:07.921  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:07.924  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:13.635  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:12:18.328  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:12:48.614  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:49.300  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:49.687  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:49.695  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:12:50.791  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:50.792  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:50.808  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:50.820  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:51.152  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:12:52.406  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:12:53.352  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:12:54.042  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:12:55.167  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:15:07.737  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:15:08.157  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:15:08.417  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:15:08.977  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:15:09.054  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:15:09.054  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:18:49.560  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:18:50.070  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:18:50.330  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:18:50.892  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:18:50.909  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:18:50.927  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:29.817  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:30.553  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:31.028  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:31.038  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:19:31.475  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:31.478  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:31.554  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:31.576  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:31.911  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:42.108  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:42.744  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:44.108  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:44.115  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:19:44.387  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:44.406  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:44.447  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:44.451  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:19:44.724  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:20:04.879  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:20:10.250  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:20:16.526  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:21:50.329  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:50.923  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:51.355  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:51.880  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:51.893  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:51.894  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:51.907  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:52.310  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:21:53.589  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:22:14.623  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:22:26.040  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:27.807  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:28.102  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:28.103  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:28.197  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:28.198  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:28.251  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:29.249  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:29.481  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:29.569  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:29.607  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:29.645  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:33.848  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:22:42.512  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:43.343  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:43.916  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:44.024  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:44.045  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:44.376  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:44.921  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:44.955  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:45.340  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:45.417  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:45.426  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:22:47.187  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:23:04.622  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:05.518  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:06.133  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:23:14.629  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:23:17.508  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:23:19.569  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:23:23.800  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:23:28.779  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:30.000  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:30.254  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:30.406  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:30.426  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:30.950  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:31.839  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:32.058  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:32.058  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:32.084  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:32.137  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:32.854  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:33.674  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:33.884  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:33.905  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:34.044  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:34.085  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:34.395  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:35.134  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:35.336  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:35.412  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:35.464  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:35.488  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:36.526  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:36.696  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:23:37.869  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:27:41.441  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:41.968  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:42.582  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:42.614  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:27:43.089  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:43.089  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:43.097  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:43.154  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:43.377  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:27:54.803  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:27:59.956  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:28:03.148  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:28:09.526  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:29:56.103  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:29:56.863  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:29:57.453  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:29:57.467  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:29:57.516  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:29:57.569  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:30:04.654  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:04.861  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:05.820  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:06.533  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:07.117  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:08.375  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:10.460  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:11.413  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:12.165  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:30:12.693  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:33:52.976  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:33:54.196  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:33:54.240  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:33:54.254  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:33:54.563  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:33:55.205  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:08.172  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:08.962  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:09.284  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:09.779  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:09.788  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:09.790  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:09.797  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:10.211  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:11.760  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:35:34.489  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:35:48.174  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:49.463  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:49.471  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:35:49.851  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:50.303  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:50.308  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:50.313  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:50.331  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:50.676  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:35:52.093  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:35:54.317  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:36:30.242  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:31.091  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:31.548  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:31.838  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:31.842  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:31.872  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:31.876  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:32.317  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:34.319  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:36:50.614  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:51.182  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:51.689  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:52.162  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:52.167  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:52.605  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:36:52.608  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:52.627  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:52.912  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:36:55.637  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:36:56.676  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:37:00.430  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:47:19.113  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:19.729  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:20.305  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:20.338  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:47:20.734  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:20.738  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:20.742  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:20.805  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:21.068  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:47:23.093  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:47:23.861  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:13.462  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:50:14.011  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:50:14.723  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:14.730  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:14.795  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:50:14.858  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:50:14.891  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:50:14.956  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:50:18.834  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:18.842  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:20.257  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:20.265  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:24.982  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:24.988  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:44.702  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:50:44.707  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:55:49.475  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:55:50.585  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:55:50.616  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:55:50.624  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 19:55:53.364  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 19:55:53.371  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:06:33.745  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:06:34.853  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:06:34.870  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:06:35.907  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:06:40.255  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:06:40.263  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:07:28.462  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:29.631  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:29.675  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:29.678  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:48.544  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:48.921  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:48.992  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:49.682  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:49.686  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:07:49.968  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:08:23.678  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:08:24.822  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:08:24.828  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:08:24.881  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:08:42.966  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:08:43.231  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:08:43.943  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:09:01.013  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:09:01.650  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:09:01.828  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:09:01.951  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:09:02.706  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:09:02.943  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:09:05.409  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:06.885  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:07.556  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:10.495  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:11.092  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:13.173  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:13.572  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:14.005  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:14.438  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:18.429  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:19.573  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:09:19.580  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:00.568  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:10:00.848  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:10:00.899  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:10:01.146  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:10:01.678  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:01.815  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:10:02.045  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:10:02.047  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:10:03.144  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:03.151  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:05.244  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:05.560  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:05.885  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:06.676  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:06.682  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:08.134  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:09.436  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:09.442  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:11.176  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:11.182  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:12.948  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:15.886  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:25.213  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:25.219  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:28.131  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:10:28.136  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:12:36.272  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:12:37.113  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:12:37.122  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:12:37.525  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:12:37.547  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:12:37.571  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:12:42.479  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:12:42.486  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:12:46.983  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:12:46.990  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:13:40.993  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:13:41.474  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:13:41.829  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:13:42.246  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:13:42.256  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:13:42.522  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:13:42.529  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:13:42.621  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:14:36.873  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:14:36.879  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:15:08.510  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:08.924  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:09.450  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:09.523  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:09.952  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:10.044  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:10.131  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:10.450  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:10.930  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:15:10.936  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:15:11.050  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:11.084  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:11.287  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:11.346  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:12.891  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:15:12.896  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:15:28.614  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:28.908  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:28.922  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:29.471  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:31.108  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:31.153  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:31.173  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:31.372  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:31.427  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:31.887  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:32.551  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:32.642  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:32.678  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:32.770  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:32.802  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:15:34.513  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:15:34.519  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:16:13.369  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:13.718  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:13.720  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:13.936  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:14.894  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:16:14.898  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:14.906  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:16:15.158  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:15.355  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:15.369  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:16:15.403  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:01.742  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:02.061  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:02.233  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:02.367  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:03.042  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:03.051  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:17:03.058  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:17:03.908  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:04.213  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:04.224  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:04.252  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:38.301  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:38.955  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:39.351  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:39.387  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:17:39.393  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:17:39.949  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:39.949  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:39.962  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:40.006  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:17:40.327  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:02.659  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:03.371  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:21:03.377  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:21:03.646  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:29.548  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:29.742  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:29.787  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:30.058  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:30.292  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:21:30.300  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:21:31.037  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:31.211  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:31.262  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:31.457  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:31.469  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:50.723  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:51.467  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:21:51.472  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:21:51.988  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:52.005  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:21:52.017  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:22:39.253  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:22:39.890  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:22:39.895  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:22:40.524  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:22:40.531  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:22:40.549  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:13.754  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:14.017  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:14.346  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:23:14.352  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:23:14.765  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:24.850  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:25.518  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:23:25.525  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:23:25.808  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:44.739  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:45.117  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:45.280  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:23:45.288  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:23:46.024  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:46.054  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:46.376  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:23:46.378  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:25.181  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:25.423  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:25.798  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:25.804  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:26.213  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:40.363  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:40.714  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:41.053  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:41.059  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:41.607  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:41.619  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:41.910  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:41.924  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:44.245  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:44.250  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:56.098  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:56.545  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:57.162  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:57.166  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:24:57.235  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:24:57.247  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:25:31.513  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:25:31.786  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:25:32.464  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:25:32.470  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:25:32.661  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:25:32.962  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:25:32.981  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:27:18.293  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:27:18.791  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:27:19.363  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:27:19.368  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:27:19.416  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:27:19.491  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:27:58.882  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:27:59.397  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:28:00.147  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:28:00.157  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:28:00.183  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:28:01.218  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:28:01.223  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:28:34.484  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:28:35.072  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:28:35.077  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:28:35.476  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:03.327  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:03.579  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:04.267  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:04.824  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:29:04.824  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:29:25.391  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:26.073  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:26.440  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:29:26.446  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:29:26.761  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:26.827  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:26.828  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:26.843  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:48.200  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:48.638  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:48.661  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:49.257  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:29:49.263  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:29:49.313  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:49.803  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:49.857  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:50.240  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:50.312  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:50.645  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:29:50.656  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:00.775  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:01.458  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:01.463  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:01.719  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:02.628  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:02.633  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:30.495  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:30.735  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:30.820  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:31.165  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:31.170  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:31.194  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:31.728  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:32.025  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:32.035  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:43.639  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:44.173  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:44.178  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:31:44.562  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:31:44.726  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:16.007  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:16.394  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:16.574  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:32:16.579  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:32:17.167  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:17.195  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:31.228  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:31.644  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:32.260  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:32:32.265  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:32:32.334  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:32:32.352  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:16.695  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:17.017  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:17.465  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:34:17.471  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:34:17.878  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:17.898  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:50.554  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:51.052  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:51.591  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:34:51.596  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:34:51.749  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:51.753  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:34:51.775  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:44.685  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:45.252  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:45.576  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:46.246  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:46.256  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:46.286  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:46.302  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:46.583  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:35:46.787  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:35:46.793  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:35:47.565  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:15.442  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:15.664  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:17.711  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:17.713  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:17.730  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:17.757  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:36:17.765  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:36:17.776  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:17.873  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:18.121  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:18.811  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:36:19.236  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:46.572  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:48.043  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:48.182  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:48.227  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:48.237  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:48.238  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:48.425  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:49.415  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:49.435  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:49.492  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:49.507  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:49.855  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:45:49.861  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:45:50.875  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:50.968  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:50.975  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:50.977  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:45:51.011  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:13.553  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:14.297  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:49:14.306  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:49:14.334  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:14.445  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:14.674  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:15.499  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:15.901  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:15.924  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:16.096  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:16.113  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:37.067  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:37.562  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:37.851  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:49:37.857  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:49:37.953  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:38.576  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:38.581  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:38.603  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:49:38.859  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:50:07.180  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:50:07.428  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:50:07.979  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:50:07.987  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:50:08.146  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:50:28.818  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:50:29.333  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:50:29.338  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:50:32.782  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:50:32.788  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:50:59.951  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:51:00.633  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:51:00.640  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:51:41.845  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:51:42.354  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:51:42.958  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:51:42.963  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:51:43.102  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:51:43.105  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:51:43.116  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:52:12.966  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:52:13.713  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:52:13.718  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:52:13.946  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:52:32.161  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:52:32.806  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:52:32.812  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:54:48.117  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:54:48.981  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:54:48.988  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:54:49.367  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:54:49.377  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:54:49.447  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:55:16.993  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:55:17.544  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:55:17.551  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:55:18.139  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:55:18.141  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:10.613  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:11.456  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:56:11.461  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:56:11.798  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:11.804  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:11.807  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:54.573  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:55.128  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:56:55.134  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:56:55.799  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:55.807  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:56:55.862  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:57:31.967  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:57:32.996  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:57:33.001  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:57:33.182  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:57:33.186  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:57:33.249  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:59:52.268  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:59:53.535  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:59:53.567  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:59:53.634  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:59:53.912  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 20:59:54.547  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:59:54.553  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 20:59:54.574  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:02:42.092  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:02:42.770  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:02:42.777  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:02:43.091  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:00.256  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:01.027  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:03:01.033  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:03:01.478  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:01.494  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:01.550  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:20.766  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:21.344  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:21.639  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:03:21.645  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:03:22.145  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:22.146  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:22.154  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:22.181  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:45.849  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:03:46.417  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:03:46.423  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:04:22.116  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:22.630  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:04:22.634  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:04:23.187  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:23.214  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:49.764  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:50.633  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:51.121  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:04:51.127  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:04:51.265  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:51.315  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:51.330  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:51.342  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:04:51.841  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:07.092  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:07.360  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:07.703  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:05:07.710  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:05:08.097  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:22.776  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:23.157  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:23.451  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:05:23.457  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:05:23.927  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:23.937  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:41.873  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:42.292  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:42.709  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:05:42.715  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:05:43.026  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:05:43.040  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:06:02.518  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:06:03.581  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:06:03.586  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:06:03.617  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:06:03.650  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:06:03.666  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:06:27.491  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:06:28.138  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:06:28.145  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:10:33.178  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:10:33.968  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:10:33.973  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:10:34.399  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:10:34.462  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:10:34.470  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:10:57.803  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:10:58.565  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:10:58.570  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:10:58.757  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:28.712  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:29.572  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:14:29.578  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:14:29.983  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:29.984  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:29.991  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:56.651  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:57.331  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:14:57.338  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:14:58.209  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:58.238  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:58.243  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:58.287  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:14:58.298  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:35.415  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:35.643  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:35.678  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:36.048  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:36.477  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:15:36.482  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:15:36.953  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:37.172  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:37.188  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:37.427  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:15:37.434  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:14.409  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:14.666  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:15.742  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:15.905  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:15.974  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:16.232  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:16.237  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:16.375  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:17.295  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:17.444  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:17.522  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:17.664  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:17.713  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:17.713  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:20.177  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:20.196  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:20.205  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:20.215  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:20.220  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:20.292  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:21.114  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:34:30.197  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:21.754  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:22.418  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:22.423  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:22.654  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:22.660  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:23.001  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:23.011  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:23.035  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:48.165  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:48.713  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:48.719  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:49.012  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:49.018  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:35:49.349  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:49.419  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:35:49.431  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:36:59.019  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:37:00.780  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:37:00.781  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:37:00.790  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:37:00.796  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:37:00.815  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:37:00.819  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:37:00.841  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:37:00.855  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:37:01.739  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:38:23.830  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:38:24.685  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:38:24.694  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:38:25.010  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:38:25.022  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:38:25.140  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:40:32.714  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:40:33.312  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:40:33.318  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:40:33.907  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:40:33.928  INFO 18264 --- [http-nio-8081-exec-5] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:40:33.969  INFO 18264 --- [http-nio-8081-exec-2] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:40:55.735  INFO 18264 --- [http-nio-8081-exec-4] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:40:55.742  INFO 18264 --- [http-nio-8081-exec-6] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:41:14.072  INFO 18264 --- [http-nio-8081-exec-9] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:41:14.730  INFO 18264 --- [http-nio-8081-exec-10] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:41:14.735  INFO 18264 --- [http-nio-8081-exec-7] c.e.m.m.m.controller.MovieController     : MovieController - getMovieById() is called
+2018-04-26 21:41:15.300  INFO 18264 --- [http-nio-8081-exec-1] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:41:15.303  INFO 18264 --- [http-nio-8081-exec-3] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
+2018-04-26 21:41:15.355  INFO 18264 --- [http-nio-8081-exec-8] c.e.m.m.m.controller.MovieController     : sad@das.cis callaed getMoviesByValues() methods 
